@@ -17,6 +17,7 @@ body {
 	background-repeat: no-repeat;
 	background-color: #1A1B1F;
 	font-family: "Helvetica Neue",Arial,sans-serif;
+	overflow: scroll;
 }
 
 /* GLOBAL ELEMENTS */
@@ -168,7 +169,9 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		visibility: hidden;
 	}
+
 		.tweet-actions ul {
 			list-style-type: none;
 		}
@@ -211,6 +214,8 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		height: 0px;
+		visibility: hidden;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
